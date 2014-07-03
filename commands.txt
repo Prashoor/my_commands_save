@@ -1,0 +1,14 @@
+sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+git config --global --unset credential.helper
+
+sudo apachectl restart
+sudo apachectl stop
+ls -al
+
+defaults write com.apple.finder AppleShowAllFiles true 
+killall Dock
+
+defaults write com.apple.finder AppleShowAllFiles false
+killall Dock
+
+curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
