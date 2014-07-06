@@ -12,3 +12,6 @@ defaults write com.apple.finder AppleShowAllFiles false
 killall Dock
 
 curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+
+curl --user login:pass https://api.bitbucket.org/1.0/repositories/ \
+--data name=REPO_NAME
